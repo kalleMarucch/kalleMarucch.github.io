@@ -44,5 +44,5 @@ showClock1();
 
 setTimeout(function () {
     showClock1();  // 最初のジャスト1秒表示
-    setInterval(showClock2, 1000); // 以降のジャスト1秒表示
+    setInterval(showClock1, 1000); // 以降のジャスト1秒表示
 }, 1000 - (new Date()).getUTCMilliseconds());
