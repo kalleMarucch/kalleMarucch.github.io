@@ -29,7 +29,7 @@ var EorzeaClock = (function(){
     };
 }());
 
-
+document.getElementById("EorzeaClockArea").innerHTML = EorzeaClock.getName();
 
 function showClock1() {
     var nowTime = new Date();
