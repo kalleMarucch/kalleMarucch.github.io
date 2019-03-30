@@ -39,5 +39,5 @@ function showClock1() {
   document.getElementById("RealtimeClockArea").innerHTML = msg; 
  }
 
- document.getElementById("RealtimeEorzeaClockArea").innerHTML = EorzeaClock.getName;
+ document.getElementById("EorzeaClockArea").innerHTML = EorzeaClock.getName;
  setInterval('showClock1()',1000);
