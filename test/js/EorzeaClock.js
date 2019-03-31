@@ -83,7 +83,7 @@ var EorzeaClock = (function(){
     }
 
     function _showAll(){
-        var msg;
+        var msg = "";
         msg += "year: " + _eorzeaYear + " ";
         return msg;
     }
