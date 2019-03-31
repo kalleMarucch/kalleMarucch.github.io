@@ -7,7 +7,7 @@ function showClock1() {
     var nowHour = zeroPadding(nowTime.getHours(),2);
     var nowMin  = zeroPadding(nowTime.getMinutes(),2);
     var nowSec  = zeroPadding(nowTime.getSeconds(),2);
-    var nowMil  = zeroPadding(nowTime.getMilliseconds(),2);
+    var nowMil  = zeroPadding(nowTime.getMilliseconds(),4);
     var msg = nowHour + ":" + nowMin + ":" + nowSec + ":" + nowMil;
     document.getElementById("RealtimeClockArea").innerHTML = msg;
 }
