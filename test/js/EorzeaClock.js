@@ -44,7 +44,7 @@ var EorzeaClock = (function(){
         _eorzeaTime = nowDate.getTime();
         var eorzeaMinutes = eorzeaTime * eorzeaStandardSeconds;
 
-        _eorzeaYear = eorzeaTime / (60 * 70 * 24 * 32);
+        _eorzeaYear = eorzeaTime / (365 * 24 * 60 * 60 * 1000);
     }
 
     function _getYear() {
@@ -109,5 +109,12 @@ var EorzeaClock = (function(){
     };
 }());
 
-document.getElementById("Debug").innerHTML = EorzeaClock.showAll();
-document.getElementById("EorzeaClockArea").innerHTML = EorzeaClock.getYear();
+function showFc(){
+    document.getElementById("Debug").innerHTML = EorzeaClock.showAll();
+    document.getElementById("EorzeaClockArea").innerHTML = EorzeaClock.getYear();
+}
+
+setTimeout(function () {
+    showFc();  // 最初のジャスト1秒表示
+    setInterval(showFc, 10); // 以降のジャスト1秒表示
+}, 10 - (new Date()).getUTCMilliseconds());
