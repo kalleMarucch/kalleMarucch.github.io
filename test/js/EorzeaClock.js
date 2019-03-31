@@ -84,7 +84,7 @@ var EorzeaClock = (function(){
 
     function _showAll(){
         var msg;
-        msg += "year: " + getYear() + " ";
+        msg += "year: " + _eorzeaYear + " ";
         return msg;
     }
 
