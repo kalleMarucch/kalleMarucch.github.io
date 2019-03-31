@@ -44,7 +44,7 @@ var EorzeaClock = function(){
         _eorzeaTime = nowDate.getTime();
         var eorzeaMinutes = eorzeaTime * eorzeaStandardSeconds;
 
-        _eorzeaYear = eorzeaTime / (365 * 24 * 60 * 60 * 1000);
+        _eorzeaYear = eorzeaTime / (365 * 24 * 60 * 60);
     }
 
     function _getYear() {
