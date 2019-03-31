@@ -40,10 +40,10 @@ var EorzeaClock = (function(){
     function _init() {
         // 何らかの処理
         var nowDate = new Date;
-        var eorzeaTime = Math.floor(eorzeaTime / eorzeaStandardYear);
+        var eorzeaTime = Math.floor(nowDate / 1000);
         var eorzeaMinutes = eorzeaTime * eorzeaStandardSeconds;
 
-        _eorzeaYear = eorzeaTime / (60 * 70 * 24 *32 * 12);
+        _eorzeaYear = eorzeaTime / (60 * 70 * 24 * 32 * 12);
     }
 
     function _getName() {
