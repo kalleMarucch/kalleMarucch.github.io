@@ -35,7 +35,10 @@ var EorzeaClock = (function(){
     function _init() {
         // 何らかの処理
         var nowDate = new Date;
-        var eorzeaYear = nowDate / eorzeaStandardSeconds / eorzeaStandardMinutes / eorzeaStandardHour / eoraezStandardDays / eorzeaStandardMonth / eorzeaStandardYear;
+        var eorzeaSeconds = nowDate / 1000;
+        var eorzeaMinutes = eorzeaSeconds * eorzeaStandardSeconds;
+
+        _eorzeaYear = Math.floor(nowDate / 1000);
     }
 
     function _getName() {
