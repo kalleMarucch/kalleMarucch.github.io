@@ -5,8 +5,8 @@ function zeroPadding(NUM, LEN){
 function showClock1() {
     var nowTime = new Date();
     var nowYear = nowTime.getFullYear();
-    var nowMonth = nowTime.getMonth();
-    var nowDay = nowTime.getDay();
+    var nowMonth = nowTime.getMonth() + 1;
+    var nowDay = nowTime.getDate();
     var nowHour = zeroPadding(nowTime.getHours(),2);
     var nowMin  = zeroPadding(nowTime.getMinutes(),2);
     var nowSec  = zeroPadding(nowTime.getSeconds(),2);
