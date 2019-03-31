@@ -29,6 +29,7 @@ var EorzeaClock = (function(){
     eorzeaStandardSeconds = 60;
 
     var
+    _eorzeaTime = 0,
     _eorzeaYear = 0,
     _eorzeaMonth = 0,
     _eorzeaDate = 0,
