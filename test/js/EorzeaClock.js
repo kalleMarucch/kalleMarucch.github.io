@@ -58,23 +58,23 @@ var EorzeaClock = (function(){
         return _eorzeaYear;
     }
 
-    unction _getMonth() {
+    function _getMonth() {
         return _eorzeaMonth;
     }
 
-    unction _getDay() {
+    function _getDay() {
         return _eorzeaDay;
     }
 
-    unction _getHours() {
+    function _getHours() {
         return _eorzeaHours;
     }
 
-    unction _getMinutes() {
+    function _getMinutes() {
         return _eorzeaMinutes;
     }
 
-    unction _getSeconds() {
+    function _getSeconds() {
         return _eorzeaSeconds;
     }
 
