@@ -41,7 +41,7 @@ var EorzeaClock = (function(){
         // 何らかの処理
         var nowDate = new Date;
         var eorzeaTime = Math.floor(nowDate.getTime() / 1000);
-        _eorzeaTime = eorzeaTime;
+        _eorzeaTime = nowDate.getTime();
         var eorzeaMinutes = eorzeaTime * eorzeaStandardSeconds;
 
         _eorzeaYear = eorzeaTime / (60 * 70 * 24 * 32);
