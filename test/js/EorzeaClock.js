@@ -29,11 +29,13 @@ var EorzeaClock = (function(){
     eorzeaStandardSeconds = 60;
 
     var _name = 'kazushi',
-    _age = 36;
+    _age = 36,
+    _eorzeaYear = 0;
 
     function _init() {
         // 何らかの処理
         var nowDate = new Date;
+        var eorzeaYear = nowDate / eorzeaStandardSeconds / eorzeaStandardMinutes / eorzeaStandardHour / eoraezStandardDays / eorzeaStandardMonth / eorzeaStandardYear;
     }
 
     function _getName() {
@@ -42,6 +44,10 @@ var EorzeaClock = (function(){
 
     function _getAge() {
         return _age;
+    }
+
+    function _getYear() {
+        return _eorzeaYear;
     }
 
     function _doSomething() {
@@ -54,8 +60,9 @@ var EorzeaClock = (function(){
     // 公開APIを返す
     return {
         getName: _getName,
-        getAge : _getAge
+        getAge : _getAge,
+        getYear : _getYear
     };
 }());
 
-document.getElementById("EorzeaClockArea").innerHTML = EorzeaClock.getName();
+document.getElementById("EorzeaClockArea").innerHTML = EorzeaClock.getYear();
