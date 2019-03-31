@@ -7,7 +7,8 @@ function showClock1() {
     var nowHour = zeroPadding(nowTime.getHours(),2);
     var nowMin  = zeroPadding(nowTime.getMinutes(),2);
     var nowSec  = zeroPadding(nowTime.getSeconds(),2);
-    var msg = nowHour + ":" + nowMin + ":" + nowSec;
+    var nowMil  = zeroPadding(nowTime.getMilliseconds(),2);
+    var msg = nowHour + ":" + nowMin + ":" + nowSec + ":" + nowMil;
     document.getElementById("RealtimeClockArea").innerHTML = msg;
 }
 
@@ -15,5 +16,5 @@ showClock1();
 
 setTimeout(function () {
     showClock1();  // 最初のジャスト1秒表示
-    setInterval(showClock1, 1000); // 以降のジャスト1秒表示
-}, 1000 - (new Date()).getUTCMilliseconds());
+    setInterval(showClock1, 10); // 以降のジャスト1秒表示
+}, 10 - (new Date()).getUTCMilliseconds());
