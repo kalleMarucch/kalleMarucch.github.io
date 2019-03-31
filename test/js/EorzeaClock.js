@@ -110,7 +110,7 @@ var EorzeaClock = (function(){
 }());
 
 function showFc(){
-    var ec = new EorzeaClock;
+    var ec = EorzeaClock;
     document.getElementById("Debug").innerHTML = ec.showAll();
     document.getElementById("EorzeaClockArea").innerHTML = ec.getYear();
 }
