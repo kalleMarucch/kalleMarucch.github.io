@@ -84,7 +84,18 @@ var EorzeaClock = (function(){
 
     function _showAll(){
         var msg = "";
-        msg += "year: " + _eorzeaYear + " ";
+        msg += "year: " + _eorzeaYear;
+        msg += "<br>";
+        msg += "month: " + _eorzeaMonth;
+        msg += "<br>";
+        msg += "date: " + _eorzeaDate;
+        msg += "<br>";
+        msg += "hours: " + _eorzeaHours;
+        msg += "<br>";
+        msg += "minutes: " + _eorzeaMinutes;
+        msg += "<br>";
+        msg += "seconds: " + _eorzeaSeconds;
+        msg += "<br>";
         return msg;
     }
 
