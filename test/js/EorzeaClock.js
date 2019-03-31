@@ -29,7 +29,6 @@ var EorzeaClock = (function(){
     eorzeaStandardSeconds = 60;
 
     var
-    _eorzeaTime = 0,
     _eorzeaYear = 0,
     _eorzeaMonth = 0,
     _eorzeaDate = 0,
@@ -41,7 +40,6 @@ var EorzeaClock = (function(){
         // 何らかの処理
         var nowDate = new Date;
         var eorzeaTime = Math.floor(nowDate.getTime() / 1000);
-        _eorzeaTime = eorzeaTime;
         var eorzeaMinutes = eorzeaTime * eorzeaStandardSeconds;
 
         _eorzeaYear = eorzeaTime / (60 * 70 * 24 * 32);
@@ -99,8 +97,6 @@ var EorzeaClock = (function(){
 
     // 公開APIを返す
     return {
-        getName: _getName,
-        getAge : _getAge,
         getYear : _getYear,
         getMonth : _getMonth,
         getDate : _getDate,
