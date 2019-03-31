@@ -43,7 +43,7 @@ var EorzeaClock = (function(){
         var eorzeaTime = Math.floor(nowDate.getTime() / 1000);
         var eorzeaMinutes = eorzeaTime * eorzeaStandardSeconds;
 
-        _eorzeaYear = eorzeaTime / (60 * 70 * 24 * 32 * 12);
+        _eorzeaYear = eorzeaTime / (60 * 70 * 24 * 32);
     }
 
     function _getName() {
@@ -82,6 +82,12 @@ var EorzeaClock = (function(){
         //・・・
     }
 
+    function _showAll(){
+        var msg;
+        msg += "year: " + getYear() + " ";
+        return msg;
+    }
+
     // 初期化を実行する
     _init();
 
@@ -94,8 +100,9 @@ var EorzeaClock = (function(){
         getDate : _getDate,
         getHours : _getHours,
         getMinutes : _getMinutes,
-        getSeconds : _getSeconds
+        getSeconds : _getSeconds,
+        showAll: _showAll
     };
 }());
 
-document.getElementById("EorzeaClockArea").innerHTML = EorzeaClock.getYear();
+document.getElementById("EorzeaClockArea").innerHTML = EorzeaClock.showAll();
