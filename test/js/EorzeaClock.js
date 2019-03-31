@@ -19,7 +19,15 @@ elemen様　エオルゼア時計
 */
 
 
+
 var EorzeaClock = (function(){
+    const eorzeaStandardYear = 12,
+    eorzeaStandardMonth = 32,
+    eoraezStandardDays = 24,
+    eorzeaStandardHour = 70,
+    eorzeaStandardMinutes = 60,
+    eorzeaStandardSeconds = 60;
+
     var _name = 'kazushi',
     _age = 36;
 

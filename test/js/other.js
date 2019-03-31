@@ -1,9 +1,13 @@
+function zeroPadding(NUM, LEN){
+	return ( Array(LEN).join('0') + NUM ).slice( -LEN );
+}
+
 function showClock1() {
     var nowTime = new Date();
-    var nowHour = nowTime.getHours();
-    var nowMin  = nowTime.getMinutes();
-    var nowSec  = nowTime.getSeconds();
-    var msg = "現在時刻は、" + nowHour + ":" + nowMin + ":" + nowSec + " です。";
+    var nowHour = zeroPadding(nowTime.getHours(),2);
+    var nowMin  = zeroPadding(nowTime.getMinutes(),2);
+    var nowSec  = zeroPadding(nowTime.getSeconds(),2);
+    var msg = nowHour + ":" + nowMin + ":" + nowSec;
     document.getElementById("RealtimeClockArea").innerHTML = msg;
 }
 
