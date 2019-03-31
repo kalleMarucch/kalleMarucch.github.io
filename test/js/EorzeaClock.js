@@ -23,7 +23,7 @@ elemen様　エオルゼア時計
 var EorzeaClock = (function(){
     const eorzeaStandardYear = 12,
     eorzeaStandardMonth = 32,
-    eoraezStandardDays = 24,
+    eoraezStandardDates = 24,
     eorzeaStandardHours = 70,
     eorzeaStandardMinutes = 60,
     eorzeaStandardSeconds = 60;
@@ -32,7 +32,7 @@ var EorzeaClock = (function(){
     _age = 36,
     _eorzeaYear = 0,
     _eorzeaMonth = 0,
-    _eorzeaDay = 0,
+    _eorzeaDate = 0,
     _eorzeaHours = 0,
     _eorzeaMinutes = 0,
     _eorzeaSeconds = 0;
@@ -40,7 +40,7 @@ var EorzeaClock = (function(){
     function _init() {
         // 何らかの処理
         var nowDate = new Date;
-        var eorzeaTime = Math.floor(nowDate / 1000);
+        var eorzeaTime = Math.floor(nowDate.getTime() / 1000);
         var eorzeaMinutes = eorzeaTime * eorzeaStandardSeconds;
 
         _eorzeaYear = eorzeaTime / (60 * 70 * 24 * 32 * 12);
@@ -62,8 +62,8 @@ var EorzeaClock = (function(){
         return _eorzeaMonth;
     }
 
-    function _getDay() {
-        return _eorzeaDay;
+    function _getDate() {
+        return _eorzeaDate;
     }
 
     function _getHours() {
@@ -91,7 +91,7 @@ var EorzeaClock = (function(){
         getAge : _getAge,
         getYear : _getYear,
         getMonth : _getMonth,
-        getDay : _getDay,
+        getDate : _getDate,
         getHours : _getHours,
         getMinutes : _getMinutes,
         getSeconds : _getSeconds

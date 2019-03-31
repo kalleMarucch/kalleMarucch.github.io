@@ -11,7 +11,7 @@ function showClock1() {
     var nowMin  = zeroPadding(nowTime.getMinutes(),2);
     var nowSec  = zeroPadding(nowTime.getSeconds(),2);
     var nowMil  = zeroPadding(nowTime.getMilliseconds(),3);
-    var msg = nowYear + "/" + nowMonth + "/" + nowDay + " " + nowHour + ":" + nowMin + ":" + nowSec + ":" + nowMil;
+    var msg = "(" + nowYear + "/" + nowMonth + "/" + nowDay + ") " + nowHour + ":" + nowMin + ":" + nowSec + ":" + nowMil;
     document.getElementById("RealtimeClockArea").innerHTML = msg;
 }
 
