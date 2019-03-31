@@ -28,8 +28,8 @@ var EorzeaClock = (function(){
     eorzeaStandardMinutes = 60,
     eorzeaStandardSeconds = 60;
 
-    var _name = 'kazushi',
-    _age = 36,
+    var
+    _eorzeaTime = 0,
     _eorzeaYear = 0,
     _eorzeaMonth = 0,
     _eorzeaDate = 0,
@@ -41,17 +41,10 @@ var EorzeaClock = (function(){
         // 何らかの処理
         var nowDate = new Date;
         var eorzeaTime = Math.floor(nowDate.getTime() / 1000);
+        _eorzeaTime = eorzeaTime;
         var eorzeaMinutes = eorzeaTime * eorzeaStandardSeconds;
 
         _eorzeaYear = eorzeaTime / (60 * 70 * 24 * 32);
-    }
-
-    function _getName() {
-        return _name;
-    }
-
-    function _getAge() {
-        return _age;
     }
 
     function _getYear() {
@@ -86,6 +79,8 @@ var EorzeaClock = (function(){
         var msg = "";
         msg += "year: " + _eorzeaYear;
         msg += "<br>";
+        msg += "year: " + _eorzeaYear;
+        msg += "<br>";
         msg += "month: " + _eorzeaMonth;
         msg += "<br>";
         msg += "date: " + _eorzeaDate;
@@ -116,4 +111,5 @@ var EorzeaClock = (function(){
     };
 }());
 
-document.getElementById("EorzeaClockArea").innerHTML = EorzeaClock.showAll();
+document.getElementById("Debug").innerHTML = EorzeaClock.showAll();
+document.getElementById("EorzeaClockArea").innerHTML = EorzeaClock.getYear();
