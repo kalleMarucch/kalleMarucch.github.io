@@ -24,21 +24,26 @@ var EorzeaClock = (function(){
     const eorzeaStandardYear = 12,
     eorzeaStandardMonth = 32,
     eoraezStandardDays = 24,
-    eorzeaStandardHour = 70,
+    eorzeaStandardHours = 70,
     eorzeaStandardMinutes = 60,
     eorzeaStandardSeconds = 60;
 
     var _name = 'kazushi',
     _age = 36,
-    _eorzeaYear = 0;
+    _eorzeaYear = 0,
+    _eorzeaMonth = 0,
+    _eorzeaDay = 0,
+    _eorzeaHours = 0,
+    _eorzeaMinutes = 0,
+    _eorzeaSeconds = 0;
 
     function _init() {
         // 何らかの処理
         var nowDate = new Date;
-        var eorzeaSeconds = nowDate / 1000;
-        var eorzeaMinutes = eorzeaSeconds * eorzeaStandardSeconds;
+        var eorzeaTime = Math.floor(eorzeaTime / eorzeaStandardYear);
+        var eorzeaMinutes = eorzeaTime * eorzeaStandardSeconds;
 
-        _eorzeaYear = Math.floor(nowDate / 1000);
+        _eorzeaYear = eorzeaTime / (60 * 70 * 24 *32 * 12);
     }
 
     function _getName() {
@@ -53,6 +58,26 @@ var EorzeaClock = (function(){
         return _eorzeaYear;
     }
 
+    unction _getMonth() {
+        return _eorzeaMonth;
+    }
+
+    unction _getDay() {
+        return _eorzeaDay;
+    }
+
+    unction _getHours() {
+        return _eorzeaHours;
+    }
+
+    unction _getMinutes() {
+        return _eorzeaMinutes;
+    }
+
+    unction _getSeconds() {
+        return _eorzeaSeconds;
+    }
+
     function _doSomething() {
         //・・・
     }
@@ -64,7 +89,12 @@ var EorzeaClock = (function(){
     return {
         getName: _getName,
         getAge : _getAge,
-        getYear : _getYear
+        getYear : _getYear,
+        getMonth : _getMonth,
+        getDay : _getDay,
+        getHours : _getHours,
+        getMinutes : _getMinutes,
+        getSeconds : _getSeconds
     };
 }());
 
