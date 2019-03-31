@@ -75,7 +75,7 @@ var EorzeaClock = (function(){
 
     function _showAll(){
         var msg = "";
-        msg += "year: " + _eorzeaYear;
+        msg += "time: " + _eorzeaTime;
         msg += "<br>";
         msg += "year: " + _eorzeaYear;
         msg += "<br>";
