@@ -20,7 +20,7 @@ elemen様　エオルゼア時計
 
 
 
-var EorzeaClock = (function(){
+var EorzeaClock = function(){
     const eorzeaStandardYear = 12,
     eorzeaStandardMonth = 32,
     eoraezStandardDates = 24,
@@ -107,7 +107,7 @@ var EorzeaClock = (function(){
         getSeconds : _getSeconds,
         showAll: _showAll
     };
-}());
+};
 
 function showFc(){
     var ec = new EorzeaClock();
