@@ -108,7 +108,7 @@ var EorzeaClock = function(){
         msg += "<br>";
         msg += "seconds: " + _eorzeaSeconds;
         msg += "<br>";
-        msg += _eorzeaYear + "/" + _eorzeaMonth + "/" + _eorzeaDate
+        msg += "ET : " + _eorzeaYear + "/" + _eorzeaMonth + "/" + _eorzeaDate
             + " " + _eorzeaHours + ":" + _eorzeaMinutes + ":" + _eorzeaSeconds;
         msg += "<br>";
         return msg;
