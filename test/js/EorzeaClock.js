@@ -56,10 +56,11 @@ var EorzeaClock = function(){
         gameDay++;
         gameMonth++;
 
+        _eorzeaYear = gameYear;
     _eorzeaMonth = gameMonth;
-    _eorzeaDate = gameDay,
-    _eorzeaHours = gameHour,
-    _eorzeaMinutes = gameMinute,
+    _eorzeaDate = gameDay;
+    _eorzeaHours = gameHour;
+    _eorzeaMinutes = gameMinute;
     _eorzeaSeconds = gameSecond;
     }
 
