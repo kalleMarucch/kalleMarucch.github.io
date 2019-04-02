@@ -135,6 +135,8 @@ function showFc(){
     document.getElementById("EorzeaClockArea").innerHTML = ec.getYear();
 }
 
+showFc();
+
 setTimeout(function () {
     showFc();  // 最初のジャスト1秒表示
     setInterval(showFc, 10); // 以降のジャスト1秒表示
