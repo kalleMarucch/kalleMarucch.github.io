@@ -39,12 +39,28 @@ var EorzeaClock = function(){
 
     function _init() {
         // 何らかの処理
+        var ratioRealToGame = (60 * 24 / 70);
         var nowDate = new Date;
         var eorzeaTime = Math.floor(nowDate.getTime() / 1000);
         _eorzeaTime = nowDate.getTime();
         var eorzeaMinutes = eorzeaTime * eorzeaStandardSeconds;
 
         _eorzeaYear = eorzeaTime / (365 * 24 * 60 * 60);
+        var delta = (eorzeaTime * ratioRealToGame);
+        var gameSecond = (delta % 60) | 0; delta -= gameSecond; delta /= 60.0;
+        var gameMinute = (delta % 60) | 0; delta -= gameMinute; delta /= 60.0;
+        var gameHour = (delta % 24) | 0; delta -= gameHour; delta /= 24.0;
+        var gameDay = (delta % 32) | 0; delta -= gameDay; delta /= 32.0;
+        var gameMonth = (delta % 12) | 0; delta -= gameMonth; delta /= 12.0;
+        var gameYear = delta | 0;
+        gameDay++;
+        gameMonth++;
+
+    _eorzeaMonth = gameMonth;
+    _eorzeaDate = gameDay,
+    _eorzeaHours = gameHour,
+    _eorzeaMinutes = gameMinute,
+    _eorzeaSeconds = gameSecond;
     }
 
     function _getYear() {
