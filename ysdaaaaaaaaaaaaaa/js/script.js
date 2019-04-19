@@ -6,12 +6,12 @@ function ysdaaaaaaaaaaaaaa(){
 
     document.getElementById('outputTextarea1').value = ysdaaaaaaaaaaaaaa;
 };
-function limitBreakAct(){
-	document.getElementById( 'limitBreakAct' ).play() ;
+
+function limitBreakActivated(){
+	document.getElementById('soundLimitBreakActivated').play();
 };
 
-
 document.getElementById("btn-ysda1").onclick = function() {
-    limitBreakAct();
+    limitBreakActivated();
     ysdaaaaaaaaaaaaaa();
 };
