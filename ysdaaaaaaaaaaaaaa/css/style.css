@@ -4,5 +4,5 @@ body {
 }
 
 small {
-    font-size: xx-small;
+    font-size: xx-small !important;
 }
