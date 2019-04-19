@@ -1,7 +1,10 @@
 function ysdaaaaaaaaaaaaaa(){
-    var ysdaaaaaaaaaaaaaa = "よしだああああああああああああああ！";
+    var ysda1 = "よしだああああああああああああああ！";
+    var ff14Tag = "#FF14 #FFXIV";
     var UserString = document.getElementById('formControlTextarea1').value;
-    document.getElementById('outputTextarea1').value = UserString + ysdaaaaaaaaaaaaaa;
+    var ysdaaaaaaaaaaaaaa = UserString + " " + ysdaaaaaaaaaaaaaa + " " + ff14Tag;
+
+    document.getElementById('outputTextarea1').value = ysdaaaaaaaaaaaaaa;
 };
 
 document.getElementById("btn-ysda1").onclick = function() {
