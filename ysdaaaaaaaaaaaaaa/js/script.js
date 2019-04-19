@@ -6,4 +6,4 @@ function ysdaaaaaaaaaaaaaa(){
 
 document.getElementById("btn-ysda1").onclick = function() {
     ysdaaaaaaaaaaaaaa();
-  };
+};
