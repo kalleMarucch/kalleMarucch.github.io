@@ -15,6 +15,8 @@ function limitBreakActivated(){
 	document.getElementById('soundLimitBreakActivated').play();
 };
 
+$('#myModal').modal('show');
+
 document.getElementById('btn-ysda1').onclick = function() {
     limitBreakActivated();
     ysdaaaaaaaaaaaaaa();
