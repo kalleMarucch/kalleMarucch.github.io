@@ -11,7 +11,8 @@ small {
     font-size: xx-small !important;
 }
 
-footer div {
+#copy-text {
+    white-space: nowrap;
     overflow: scroll;
     overflow-x: scroll;
     overflow-y: hidden;
