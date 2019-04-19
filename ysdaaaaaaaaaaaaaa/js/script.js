@@ -20,7 +20,7 @@ document.getElementById('btn-ysda1').onclick = function() {
     ysdaaaaaaaaaaaaaa();
 };
 
-document.getElementById('').onkeyup = function() {
+document.getElementById('formControlTextarea1').onkeyup = function() {
     var n = Math.random()
     if(n < 0.1){
         limitBreakCharged();
