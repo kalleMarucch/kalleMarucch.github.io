@@ -7,11 +7,22 @@ function ysdaaaaaaaaaaaaaa(){
     document.getElementById('outputTextarea1').value = ysdaaaaaaaaaaaaaa;
 };
 
+function limitBreakCharged(){
+	document.getElementById('soundLimitBreakCharged').play();
+};
+
 function limitBreakActivated(){
 	document.getElementById('soundLimitBreakActivated').play();
 };
 
-document.getElementById("btn-ysda1").onclick = function() {
+document.getElementById('btn-ysda1').onclick = function() {
     limitBreakActivated();
     ysdaaaaaaaaaaaaaa();
 };
+
+document.getElementById('').onkeyup = function() {
+    var n = Math.random()
+    if(n < 0.1){
+        limitBreakCharged();
+    }
+}
