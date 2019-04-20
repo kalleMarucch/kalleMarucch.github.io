@@ -6,7 +6,7 @@ function ysdaaaaaaaaaaaaaa(){
 
     document.getElementById('outputTextarea1').value = ysdaaaaaaaaaaaaaa;
 
-    var button = '<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-lang="ja" data-show-count="false" data-text="' + ysdaaaaaaaaaaaaaa + '" data-url="">Tweet</a>';
+    var button = '<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-lang="ja" data-show-count="false" data-url=" " data-text="' + ysdaaaaaaaaaaaaaa + '">Tweet</a>';
     $('#twbtn').html(button);
     twttr.widgets.load();
     //document.getElementById('tweetButton').setAttribute('data-text', ysdaaaaaaaaaaaaaa);
