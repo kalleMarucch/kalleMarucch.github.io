@@ -5,7 +5,7 @@ function ysdaaaaaaaaaaaaaa(){
     var ysdaaaaaaaaaaaaaa = UserString + " " + ysda1 + " " + ff14Tag;
 
     document.getElementById('outputTextarea1').value = ysdaaaaaaaaaaaaaa;
-    document.getElementById('tweerBtn').getAttribute('data-text').value = ysdaaaaaaaaaaaaaa;
+    document.getElementById('tweetButton').setAttribute('data-text', ysdaaaaaaaaaaaaaa);
 };
 
 function limitBreakCharged(){
