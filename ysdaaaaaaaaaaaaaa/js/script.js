@@ -59,7 +59,7 @@ $(document).ready(function() {
 // input for limit break charge...
 document.getElementById('inputTextarea1').onkeyup = function() {
     var n = Math.random()
-    if((limitBreakGauge < 4) && (n < 0.1)){
+    if((limitBreakGauge < 3) && (n < 0.08)){
         limitBreakGauge++;
         limitBreakCharged();
         limitBreakBar(limitBreakGauge);
