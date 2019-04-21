@@ -30,26 +30,27 @@ document.getElementById('btn-ysda1').onclick = function() {
     ysdaaaaaaaaaaaaaa();
 };
 
-// input for limit break charge...
+// limit break bar progress
 var limitBreakGauge = 0;
 function limitBreakBar(value){
+    var bar = document.getElementById('progress-bar');
     switch(value){
         case 1:
-            document.getElementById('progress-bar').style.widows =  "33%";
+            bar.style.widows =  "33%";
             break;
         case 2:
-            document.getElementById('progress-bar').style.widows =  "66%";
+            bar.style.widows =  "66%";
             break;
         case 3:
-            document.getElementById('progress-bar').style.widows =  "100%";
+            bar.style.widows =  "100%";
             break;
         default:
-            document.getElementById('progress-bar').style.widows =  "0%";
+            bar.style.widows =  "0%";
     }
-
+    bar.load();
 }
 
-
+// input for limit break charge...
 document.getElementById('inputTextarea1').onkeyup = function() {
     var n = Math.random()
     if((limitBreakGauge < 4) && (n < 0.1)){
