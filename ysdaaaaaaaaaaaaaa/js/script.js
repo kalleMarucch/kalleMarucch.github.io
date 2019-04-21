@@ -35,16 +35,16 @@ var limitBreakGauge = 0;
 function limitBreakBar(value){
     switch(value){
         case 1:
-            document.getElementById('progress-bar').setAttribute('style', 'width: 33%');
+            document.getElementById('progress-bar').style.widows =  "33%";
             break;
         case 2:
-            document.getElementById('progress-bar').setAttribute('style', 'width: 66%');
+            document.getElementById('progress-bar').style.widows =  "66%";
             break;
         case 3:
-            document.getElementById('progress-bar').setAttribute('style', 'width: 100%');
+            document.getElementById('progress-bar').style.widows =  "100%";
             break;
         default:
-            document.getElementById('progress-bar').setAttribute('style', 'width: 0%');
+            document.getElementById('progress-bar').style.widows =  "0%";
     }
 
 }
@@ -52,7 +52,7 @@ function limitBreakBar(value){
 
 document.getElementById('inputTextarea1').onkeyup = function() {
     var n = Math.random()
-    if((limitBreakGauge < 3) && (n < 0.1)){
+    if((limitBreakGauge <= 3) && (n < 0.1)){
         limitBreakGauge++;
         limitBreakCharged();
         limitBreakBar(limitBreakGauge);
