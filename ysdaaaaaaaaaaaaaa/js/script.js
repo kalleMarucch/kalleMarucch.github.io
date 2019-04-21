@@ -47,8 +47,14 @@ function limitBreakBar(value){
         default:
             bar.style.widows =  "0%";
     }
-    $('#progress-bar').load(location.href + " #progress-bar");
 }
+
+// limit break bar check
+$(document).ready(function() {
+    $('#progress-bar').on('DOMSubtreeModified propertychange', function() {
+        $("#progress-bar").load(location.href + " #progress-bar");
+    });
+});
 
 // input for limit break charge...
 document.getElementById('inputTextarea1').onkeyup = function() {
