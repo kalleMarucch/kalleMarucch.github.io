@@ -47,7 +47,7 @@ function limitBreakBar(value){
         default:
             bar.style.widows =  "0%";
     }
-    bar.load();
+    $('#progress-bar').load();
 }
 
 // input for limit break charge...
