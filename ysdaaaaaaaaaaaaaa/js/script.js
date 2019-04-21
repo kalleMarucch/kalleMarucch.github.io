@@ -16,7 +16,8 @@ $('#myModal').modal('show');
 
 // sound limit break charge
 function limitBreakCharged(){
-	document.getElementById('soundLimitBreakCharged').play();
+    var sound = new document.getElementById('soundLimitBreakCharged');
+    sound.play();
 };
 
 // sound limit break actevated
