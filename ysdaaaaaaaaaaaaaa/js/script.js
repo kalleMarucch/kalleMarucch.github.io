@@ -36,16 +36,16 @@ function limitBreakBar(value){
     var bar = document.getElementById('progress-bar');
     switch(value){
         case 1:
-            bar.style.widows =  "33%";
+            bar.style.width =  "33%";
             break;
         case 2:
-            bar.style.widows =  "66%";
+            bar.style.width =  "66%";
             break;
         case 3:
-            bar.style.widows =  "100%";
+            bar.style.width =  "100%";
             break;
         default:
-            bar.style.widows =  "0%";
+            bar.style.width =  "0%";
     }
 }
 
