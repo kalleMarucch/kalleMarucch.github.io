@@ -52,7 +52,7 @@ function limitBreakBar(value){
 
 document.getElementById('inputTextarea1').onkeyup = function() {
     var n = Math.random()
-    if((limitBreakGauge <= 3) && (n < 0.1)){
+    if((limitBreakGauge < 4) && (n < 0.1)){
         limitBreakGauge++;
         limitBreakCharged();
         limitBreakBar(limitBreakGauge);
