@@ -21,22 +21,22 @@
         </header>
         <main class="py-4">
             <div id="container">
-                <div class="card mb-3 mx-auto text-center" style="max-width: 18rem;">
+                <div class="card mb-3 mx-auto text-center shadow-lg" style="max-width: 18rem;">
                     <div class="card-header sticky-top">
                         <p class="text-warning text-left">LIMIT BREAK</p>
                         <div class="row px-1">
                             <div class="col px-1">
-                                <div class="progress">
+                                <div class="progress shadow-sm">
                                     <div id="limit_break_bar1" class="progress-bar bg-warning" role="progressbar" ></div>
                                 </div>
                             </div>
                             <div class="col px-1">
-                                <div class="progress">
+                                <div class="progress shadow-sm">
                                     <div id="limit_break_bar2" class="progress-bar bg-warning" role="progressbar" aria-valuenow="1" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                             </div>
                             <div class="col px-1">
-                                <div class="progress">
+                                <div class="progress shadow-sm">
                                     <div id="limit_break_bar3" class="progress-bar bg-warning" role="progressbar" aria-valuenow="1" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                             </div>
@@ -45,20 +45,31 @@
                     <div class="card-body">
                         <form id="form1" method="" accept="" onsubmit="return false;">
                             <div class="form-group">
-                                <textarea class="form-control" id="inputTextarea1" placeholder="入力してLBを貯める" rows="3"></textarea>
+                                <textarea class="form-control shadow-sm" id="input_textarea" placeholder="入力してLBを溜める" rows="3"></textarea>
                             </div>
+                            <hr>
                             <div class="form-group">
-                                <input id="btn-ysda1" type="image" src="./img/limit_break.png" class="img-thumbnail" alt="よしだあああ！">
+                                <p>オプション</p>
+                                <input type="radio" id="odder_otter" name="emotion" value=1 class="radio">
+                                <label for="odder_otter"><img src="./img/odder_otter.png" alt="ウソウソ" class="img-thumbnail"></label>
+                                <input type="radio" id="cherry_bomb" name="emotion" value=2 class="radio" checked>
+                                <label for="cherry_bomb"><img src="./img/cherry_bomb.png" alt="ボム" class="img-thumbnail"></label>
+                                <input type="radio" id="dalamud" name="emotion" value=3 class="radio">
+                                <label for="dalamud"><img src="./img/wind-up_dalamud.png" alt="ダラガブ" class="img-thumbnail"></label>
+                                <input type="radio" id="raubahn" name="emotion" value=4 class="radio">
+                                <label for="raubahn"><img src="./img/wind-up_raubahn.png" alt="ラウバーン" class="img-thumbnail"></label>
                             </div>
-                            <!--
+                            <hr>
                             <div class="form-group">
-                                <textarea class="form-control" id="outputTextarea1" rows="3" readonly></textarea>
+                                <input id="button_ysda" type="image" src="./img/limit_break.png" class="img-thumbnail shadow-sm" alt="よしだあああ！">
                             </div>
-                            -->
+                            <!---<div class="form-group">
+                                <textarea class="form-control" id="output_textarea" rows="5" readonly></textarea>
+                            </div>-->
                         </form>
                     </div>
                     <div class="card-footer">
-                        <div id="twbtn"></div>
+                        <div id="tweet_button_area"></div>
                     </div>
                 </div>
             </div>
@@ -71,11 +82,11 @@
             <!-- &copy; -->
         </footer>
         <!-- MODAL -->
-        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal fade" id="my_modal" tabindex="-1" role="dialog" aria-labelledby="modalCenterTitle" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
               <div class="modal-content">
                 <div class="modal-header bg-danger">
-                   <h5 class="modal-title" id="exampleModalCenterTitle">はじめに。</h5>
+                   <h5 class="modal-title" id="modalCenterTitle">はじめに。</h5>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">                        <span aria-hidden="true">&times;</span>
                     </button>
                     </div>
@@ -83,14 +94,14 @@
                       <p>音が流れます。音量注意！</p>
                       <br>
                       <p>よしだああああああ！</p>
-                      <p>ってつぶやきづらいなぁ・・・</p>
-                      <p>そんな光の戦士のために</p>
+                      <p>って&nbsp;つぶやきづらいなぁ・・・</p>
+                      <p>そんな光の戦士のために。</p>
                       <br>
                       <p>動作がおかしい場合</p>
                       <p>&emsp;BL解除お願いします</p>
                       <p>&emsp;※コンテンツブロッカー確認</p>
                       <br>
-                      <p>Ver: 0.7 くらい</p>
+                      <p>Ver: 0.8 くらい</p>
                       <p>ToDo: デザイン調整</p>
                       <p>ToDo: シャキーンアルゴリズム調整</p>
                     </div>
@@ -98,10 +109,10 @@
                 </div>
               </div>
         <!-- Audios -->
-        <audio id="soundLimitBreakActivated" preload="auto">
+        <audio id="sound_limit_break_activated" preload="auto">
             <source src="./audio/FFXIV_Limit_Break_Activated.mp3" type="audio/mp3">
         </audio>
-        <audio id="soundLimitBreakCharged" preload="auto">
+        <audio id="sound_limit_break_charged" preload="auto">
             <source src="./audio/FFXIV_Limit_Break_Charged.mp3" type="audio/mp3">
         </audio>
         <!-- SCRIPTS -->
