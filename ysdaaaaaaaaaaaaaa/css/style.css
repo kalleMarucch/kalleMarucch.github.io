@@ -7,6 +7,10 @@ p{
     margin: 0px;
 }
 
+.sticky-top{
+    top:54px !important;
+}
+
 small {
     font-size: xx-small !important;
 }
@@ -17,3 +21,10 @@ small {
     overflow-x: scroll;
     overflow-y: hidden;
 }
+
+/*
+.progress-bar {
+    -webkit-transition: width 1s ease;
+    transition: width 1s ease;
+}
+/*

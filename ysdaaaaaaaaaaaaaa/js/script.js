@@ -1,69 +1,70 @@
-// main
+// var
+var limitBreakGauge1 = false;
+var limitBreakGauge2 = false;
+var limitBreakGauge3 = false;
+
+// show modal first
+$('#myModal').modal('show');
+
+// limit break bar
+function chargeLimitBreak(){
+
+    if(!limitBreakGauge1){
+        $("#limit_break_bar1").css({'width':'1%'});
+        $("#limit_break_bar1").css({'width':'100%'});
+        limitBreakGauge1 = true;
+        playLimitBreakCharged();
+    }else if(!limitBreakGauge2){
+        $("#limit_break_bar2").css({'width':'1%'});
+        $("#limit_break_bar2").css({'width':'100%'});
+        limitBreakGauge2 = true;
+        playLimitBreakCharged();
+    }else if(!limitBreakGauge3){
+        $("#limit_break_bar3").css({'width':'1%'});
+        $("#limit_break_bar3").css({'width':'100%'});
+        limitBreakGauge3 = true;
+        playLimitBreakCharged();
+    }
+}
+
+// input for limit break charge...
+$(function () {
+    $(document).on('keyup','#inputTextarea1',function(){
+        var n = Math.random();
+        if(n < 0.1){
+            chargeLimitBreak();
+        }
+    });
+})
+
+// generate tweet button
 function ysdaaaaaaaaaaaaaa(){
     var ysda1 = "よしだああああああああああああああ！";
     var ff14Tag = "#FF14 #FFXIV";
     var UserString = document.getElementById('inputTextarea1').value;
     var ysdaaaaaaaaaaaaaa = UserString + " " + ysda1 + " " + ff14Tag;
 
-    var button = '<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-lang="ja" data-show-count="false" data-url="#" data-text="' + ysdaaaaaaaaaaaaaa + '">Tweet</a>';
-    $('#twbtn').html(button);
+    var tweetButton = '<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-lang="ja" data-show-count="false" data-url="#" data-text="' + ysdaaaaaaaaaaaaaa + '">Tweet</a>';
+
+    $('#twbtn').html(tweetButton);
     twttr.widgets.load();
     //document.getElementById('outputTextarea1').value = ysdaaaaaaaaaaaaaa;
 };
 
-// show modal first
-$('#myModal').modal('show');
-
-// sound limit break charge
-function limitBreakCharged(){
+// play:limit break charge
+function playLimitBreakCharged(){
     var sound = document.getElementById('soundLimitBreakCharged');
     sound.load();
     sound.play();
 };
 
-// sound limit break actevated
-function limitBreakActivated(){
+// play:limit break actevated
+function playLimitBreakActivated(){
 	document.getElementById('soundLimitBreakActivated').play();
 };
 
 // limit break !!!
 document.getElementById('btn-ysda1').onclick = function() {
-    limitBreakActivated();
+    playLimitBreakActivated();
     ysdaaaaaaaaaaaaaa();
 };
-
-// limit break bar progress
-var limitBreakGauge = 0;
-function limitBreakBar(value){
-    var bar = document.getElementById('progress-bar');
-    switch(value){
-        case 1:
-            bar.style.width =  "33%";
-            break;
-        case 2:
-            bar.style.width =  "66%";
-            break;
-        case 3:
-            bar.style.width =  "100%";
-            break;
-        default:
-            bar.style.width =  "0%";
-    }
-}
-
-// limit break bar check
-$(document).ready(function() {
-    $('#progress-bar').on('DOMSubtreeModified propertychange', function() {
-        $("#progress-bar").load(location.href + " #progress-bar");
-    });
-});
-
-// input for limit break charge...
-document.getElementById('inputTextarea1').onkeyup = function() {
-    var n = Math.random()
-    if((limitBreakGauge < 3) && (n < 0.08)){
-        limitBreakGauge++;
-        limitBreakCharged();
-        limitBreakBar(limitBreakGauge);
-    }
-}

@@ -15,22 +15,35 @@
     <div id="app">
         <!-- コンテンツを配置 -->
         <header>
-            <nav class="navbar fixed-top navbar-dark bg-dark">
-                <a class="navbar-brand" href="#">YSDaaaaaaaaaaaaaa</a>
+            <nav class="navbar fixed-top navbar-dark bg-dark text-center">
+                <a class="navbar-brand" href="#">よしだに物申す！</a>
             </nav>
         </header>
         <main class="py-4">
             <div id="container">
-                <div class="card border-danger mb-3 mx-auto text-center" style="max-width: 18rem;">
-                    <div class="card-header">吉田に物申す！</div>
-                    <div class="card-body text-danger">
-                        <form id="form1" method="" accept="" onsubmit="return false;">
-                            <div class="form-group">
-                                <p class="text-warning text-left">LIMIT BREAK</p>
+                <div class="card mb-3 mx-auto text-center" style="max-width: 18rem;">
+                    <div class="card-header sticky-top">
+                        <p class="text-warning text-left">LIMIT BREAK</p>
+                        <div class="row px-1">
+                            <div class="col px-1">
                                 <div class="progress">
-                                    <div id="progress-bar" class="progress-bar bg-warning" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div id="limit_break_bar1" class="progress-bar bg-warning" role="progressbar" ></div>
                                 </div>
                             </div>
+                            <div class="col px-1">
+                                <div class="progress">
+                                    <div id="limit_break_bar2" class="progress-bar bg-warning" role="progressbar" aria-valuenow="1" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="col px-1">
+                                <div class="progress">
+                                    <div id="limit_break_bar3" class="progress-bar bg-warning" role="progressbar" aria-valuenow="1" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <form id="form1" method="" accept="" onsubmit="return false;">
                             <div class="form-group">
                                 <textarea class="form-control" id="inputTextarea1" placeholder="入力してLBを貯める" rows="3"></textarea>
                             </div>
@@ -51,9 +64,9 @@
             </div>
         </main>
         <footer>
-            <div id="copy-text" class="fixed-bottom bg-dark text-center py-1 px-2">
-                <p class="text-muted"><small>記載されている会社名・製品名・システム名などは、各社の商標、または登録商標です。</small></p>
-                <p class="text-muted"><small>Copyright (C) 2010 - 2019 SQUARE ENIX CO., LTD. All Rights Reserved.</small></p>
+            <div id="copy-text" class="fixed-bottom bg-dark text-center px-2 text-muted">
+                <small>記載されている会社名・製品名・システム名などは、各社の商標、または登録商標です。</small><br>
+                <small>Copyright (C) 2010 - 2019 SQUARE ENIX CO., LTD. All Rights Reserved.</small>
             </div>
             <!-- &copy; -->
         </footer>
@@ -67,10 +80,15 @@
                     </button>
                     </div>
                     <div class="modal-body">
-                      <p>操作の途中で音が流れます。</p>
+                      <p>音が流れます。音量注意！</p>
+                      <br>
                       <p>よしだああああああ！</p>
-                      <p>って言いづらいなあ・・・</p>
+                      <p>ってつぶやきづらいなぁ・・・</p>
                       <p>そんな光の戦士のために</p>
+                      <br>
+                      <p>動作がおかしい場合</p>
+                      <p>&emsp;BL解除お願いします</p>
+                      <p>&emsp;※コンテンツブロッカー確認</p>
                       <br>
                       <p>Ver: 0.7 くらい</p>
                       <p>ToDo: デザイン調整</p>
