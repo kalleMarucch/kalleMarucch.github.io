@@ -3,6 +3,8 @@ var limitBreakGauge1 = false;
 var limitBreakGauge2 = false;
 var limitBreakGauge3 = false;
 
+var limitBreakGauge = 0;
+
 // show modal first
 $('#my_modal').modal('show');
 
@@ -13,16 +15,19 @@ function chargeLimitBreak(){
         $("#limit_break_bar1").css({'width':'1%'});
         $("#limit_break_bar1").css({'width':'100%'});
         limitBreakGauge1 = true;
+        limitBreakGauge++;
         playLimitBreakCharged();
     }else if(!limitBreakGauge2){
         $("#limit_break_bar2").css({'width':'1%'});
         $("#limit_break_bar2").css({'width':'100%'});
         limitBreakGauge2 = true;
+        limitBreakGauge++;
         playLimitBreakCharged();
     }else if(!limitBreakGauge3){
         $("#limit_break_bar3").css({'width':'1%'});
         $("#limit_break_bar3").css({'width':'100%'});
         limitBreakGauge3 = true;
+        limitBreakGauge++;
         playLimitBreakCharged();
     }
 }
@@ -100,17 +105,19 @@ function playLimitBreakActivated(){
 
 // limit break !!!
 document.getElementById('button_ysda').onclick = function() {
-    chargeLimitBreak();
-    setTimeout(function(){
+    var maxChargeLimitBreak = function(){
         chargeLimitBreak();
-        setTimeout(function(){
-            chargeLimitBreak();
+        var id = setTimeout(maxChargeLimitBreak, 1000);
+        if(limitBreakGauge > 2){　
+            clearTimeout(id);
             setTimeout(function(){
                 playLimitBreakActivated();
                 ysdaaaaaaaaaaaaaa();
-            },1000);
-        },1000);
-    },1000);
+            }, 1000);
+        }
+    }
+    maxChargeLimitBreak();
+
 
 
 };
