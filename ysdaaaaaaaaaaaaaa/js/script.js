@@ -36,8 +36,12 @@ function chargeLimitBreak(){
 // input for limit break charge...
 $(function () {
     $(document).on('keyup','#input_textarea',function(){
+
+        var count = $('#input_textarea').val().length;
+        $('#count_textarea').text(count);
+
         var n = Math.random();
-        if(n < 0.1){
+        if(n < (0.014 * 4)){
             chargeLimitBreak();
         }
     });
@@ -49,6 +53,7 @@ function ysdaaaaaaaaaaaaaa(){
     var cherry_bomb = "よしだあああ！";
     var dalamud = "よしだああああああああああああああ！";
     var ff14Tag = "#FF14 #FFXIV";
+    var hpbdYsdTag = "#吉P生誕祭";
     var userString = document.getElementById('input_textarea').value;
     var userStringLength = userString.length;
     var userEmotion = document.getElementById('form1').emotion.value;
@@ -63,11 +68,14 @@ function ysdaaaaaaaaaaaaaa(){
         case '1': ysdaaa += odder_otter; break;
         case '2': ysdaaa += cherry_bomb; break;
         case '3': ysdaaa += dalamud; break;
-        case '4': ysdaaa += raubahn(userStringLength); break;
+        case '4': ysdaaa += raubahn(userStringLength, 120); break;
+        case '5': ysdaaa += raubahn(userStringLength, 110); break;
         default: ysdaaa += dalamud;
     }
 
     var ysdaaaaaaaaaaaaaa = userString + ysdaaa + " " + ff14Tag;
+
+    if(userEmotion == '5') ysdaaaaaaaaaaaaaa += " " + hpbdYsdTag;
 
     var tweetButton = '<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-lang="ja" data-show-count="false" data-url="#" data-text="' + ysdaaaaaaaaaaaaaa + '">Tweet</a>';
 
@@ -77,10 +85,10 @@ function ysdaaaaaaaaaaaaaa(){
 };
 
 // option: raubahn
-function raubahn(value){
+function raubahn(strLength, maxStrLength){
     var ysda = "よしだ";
 
-    for( var i = 0; i <= (120 - value); i++){
+    for( var i = 0; i <= (maxStrLength - strLength); i++){
         ysda+="あ";
     }
 
@@ -117,7 +125,4 @@ document.getElementById('button_ysda').onclick = function() {
         }
     }
     maxChargeLimitBreak();
-
-
-
 };

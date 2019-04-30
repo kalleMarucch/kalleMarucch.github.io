@@ -21,8 +21,8 @@
         </header>
         <main class="py-4">
             <div id="container">
-                <div class="card mb-3 mx-auto text-center shadow-lg" style="max-width: 18rem;">
-                    <div class="card-header sticky-top">
+                <div class="card mb-3 mx-auto text-center shadow-lg bg-light" style="max-width: 18rem;">
+                    <div class="card-header sticky-top bg-secondary">
                         <p class="text-warning text-left">LIMIT BREAK</p>
                         <div class="row px-1">
                             <div class="col px-1">
@@ -45,11 +45,12 @@
                     <div class="card-body">
                         <form id="form1" method="" accept="" onsubmit="return false;">
                             <div class="form-group">
-                                <textarea class="form-control shadow-sm" id="input_textarea" placeholder="入力してLBを溜める" rows="3"></textarea>
+                                <textarea class="form-control shadow-sm" id="input_textarea" placeholder="ここに入力して&#13;&#10;パワーをメテオに！" rows="3" maxlength="100"></textarea>
+                                <div class="text-right text-muted"><span id="count_textarea">0</span><span> / 100</span></div>
                             </div>
                             <hr>
                             <div class="form-group">
-                                <p>オプション</p>
+                                <p>今の気持ちは？</p>
                                 <input type="radio" id="odder_otter" name="emotion" value=1 class="radio">
                                 <label for="odder_otter"><img src="./img/odder_otter.png" alt="ウソウソ" class="img-thumbnail"></label>
                                 <input type="radio" id="cherry_bomb" name="emotion" value=2 class="radio" checked>
@@ -58,6 +59,8 @@
                                 <label for="dalamud"><img src="./img/wind-up_dalamud.png" alt="ダラガブ" class="img-thumbnail"></label>
                                 <input type="radio" id="raubahn" name="emotion" value=4 class="radio">
                                 <label for="raubahn"><img src="./img/wind-up_raubahn.png" alt="ラウバーン" class="img-thumbnail"></label>
+                                <input type="radio" id="present" name="emotion" value=5 class="radio">
+                                <label for="present"><img src="./img/demon_box.png" alt="プレゼンター" class="img-thumbnail"></label>
                             </div>
                             <hr>
                             <div class="form-group">
@@ -91,19 +94,16 @@
                     </button>
                     </div>
                     <div class="modal-body">
-                      <p>音が流れます。音量注意！</p>
-                      <br>
                       <p>よしだああああああ！</p>
                       <p>って&nbsp;つぶやきづらいなぁ・・・</p>
                       <p>そんな光の戦士のために。</p>
                       <br>
-                      <p>動作がおかしい場合</p>
+                      <p>慣れてきたら自分でつぶやこう！</p>
+                      <br>
+                      <p>※1.音が流れます。音量注意！</p>
+                      <p>※2.動作がおかしい場合</p>
                       <p>&emsp;BL解除お願いします</p>
                       <p>&emsp;※コンテンツブロッカー確認</p>
-                      <br>
-                      <p>Ver: 0.8 くらい</p>
-                      <p>ToDo: デザイン調整</p>
-                      <p>ToDo: シャキーンアルゴリズム調整</p>
                     </div>
                   </div>
                 </div>
