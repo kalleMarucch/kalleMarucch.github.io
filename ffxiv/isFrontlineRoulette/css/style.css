@@ -1,9 +1,0 @@
-main{
-    padding: 56px 0px;
-}
-#copy-text {
-    white-space: nowrap;
-    overflow: scroll;
-    overflow-x: scroll;
-    overflow-y: hidden;
-}
