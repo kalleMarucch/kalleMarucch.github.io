@@ -25,15 +25,15 @@ function isFrontlineContent(val) {
     switch (val) {
         case 0:
             array.push("フィールド・オブ・グローリー");
-            array.push("（砕氷戦）");
+            array.push("砕氷戦");
             break;
         case 1:
             array.push("外縁遺跡群");
-            array.push("（制圧戦）");
+            array.push("制圧戦");
             break;
         case 2:
             array.push("シールロック");
-            array.push("（争奪戦）");
+            array.push("争奪戦");
             break;
         default:
             array.push('none');
