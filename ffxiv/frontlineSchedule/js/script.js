@@ -9,7 +9,7 @@ $(function () {
         day3.setDate(day3.getDate() + index);
         var day3Week = [ "日", "月", "火", "水", "木", "金", "土" ][day3.getDay()];
 
-        var day4 = day3.getFullYear() + "/" + (day3.getMonth() + 1) + "/" + day3.getDate() + '(' + day3Week + ')';
+        var day4 = (day3.getMonth() + 1) + "/" + day3.getDate() + '(' + day3Week + ')';
 
         var contentArray = isFrontlineContent((dayDiff + index) % 3);
 
