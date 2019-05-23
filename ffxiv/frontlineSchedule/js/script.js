@@ -14,8 +14,8 @@ $(function () {
         var contentArray = isFrontlineContent((dayDiff + index) % 3);
 
         $('#frontlineContentDay' + index).text(day4);
-        $('#frontlineContent' + index + '_1').text(contentArray[0]);
-        $('#frontlineContent' + index + '_2').text(contentArray[1]);
+        $('#frontlineContentName' + index).text(contentArray[0]);
+        $('#frontlineContentShort' + index).text(contentArray[1]);
     }
 });
 
