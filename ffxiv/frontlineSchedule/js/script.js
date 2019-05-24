@@ -9,7 +9,7 @@ $(function () {
         day3.setDate(day3.getDate() + index);
         var day3Week = ["日", "月", "火", "水", "木", "金", "土"][day3.getDay()];
 
-        var day4 = (day3.getMonth() + 1) + "/" + day3.getDate() + '(' + day3Week + ')';
+        var day4 = (day3.getMonth() + 1) + "/" + day3.getDate();
 
         var contentArray = isFrontlineContent((dayDiff + index) % 3);
 
@@ -17,7 +17,10 @@ $(function () {
             $('<tr></tr>')
                 //.append($('<td></td>').text(index + 1))
                 .append($('<td></td>')
-                    .append($('<small></small>').text(day4)))
+                    .append($('<small></small>').text(day4))
+                    .append('<br>')
+                    .append($('<small></small>').text('(' + day3Week + ')'))
+                )
                 .append($('<td></td>')
                     .append($('<small></small>').text(contentArray[1]))
                     .append('<br>')
