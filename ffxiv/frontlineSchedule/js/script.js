@@ -7,15 +7,23 @@ $(function () {
 
         var day3 = new Date(day2.getTime());
         day3.setDate(day3.getDate() + index);
-        var day3Week = [ "日", "月", "火", "水", "木", "金", "土" ][day3.getDay()];
+        var day3Week = ["日", "月", "火", "水", "木", "金", "土"][day3.getDay()];
 
         var day4 = (day3.getMonth() + 1) + "/" + day3.getDate() + '(' + day3Week + ')';
 
         var contentArray = isFrontlineContent((dayDiff + index) % 3);
 
-        $('#frontlineContentDay' + index).text(day4);
-        $('#frontlineContentName' + index).text(contentArray[0]);
-        $('#frontlineContentShort' + index).text(contentArray[1]);
+        $('tbody').append(
+            $('<tr></tr>')
+                //.append($('<td></td>').text(index + 1))
+                .append($('<td></td>')
+                    .append($('<small></small>').text(day4)))
+                .append($('<td></td>')
+                    .append($('<small></small>').text(contentArray[1]))
+                    .append('<br>')
+                    .append($('<small></small>').text(contentArray[0]))
+                )
+        );
     }
 });
 
