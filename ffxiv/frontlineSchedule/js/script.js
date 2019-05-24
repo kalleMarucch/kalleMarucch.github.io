@@ -13,7 +13,7 @@ $(function () {
 
         var contentArray = isFrontlineContent((dayDiff + index) % 3);
 
-        $('tbody').append(
+        $('#frontlineSchedule tbody').append(
             $('<tr></tr>')
                 //.append($('<td></td>').text(index + 1))
                 .append($('<td></td>')

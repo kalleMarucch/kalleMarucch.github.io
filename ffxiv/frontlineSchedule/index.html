@@ -19,18 +19,153 @@
     </header>
     <main class="my-3">
         <div class="container">
-            <div class="table-responsive my-2 mx-auto" style="width: 18rem;">
-                <table class="table table-striped table-dark">
-                    <thead>
-                        <tr>
-                            <th scope="col" class="mx-0">日付</th>
-                            <th scope="col">名前</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                    </tbody>
-                </table>
+            <div class="card-columns">
+                <div class="card border-info">
+                    <div class="card-header">
+                        <h4>スケジュール</h4>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">1週間先まで確認できるよ</h5>
+                        <div class="table-responsive mx-auto">
+                            <table id="frontlineSchedule" class="table table-sm table-info">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">日付</th>
+                                        <th scope="col">コンテンツ</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                    </div>
+                </div>
+                <div class="card border-danger">
+                    <div class="card-header">
+                        <h4>キル ポイント</h4>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">倒すとたくさん、負けても一律</h5>
+                        <table class="table table-sm table-danger">
+                            <thead>
+                                <tr>
+                                    <th>状態</th>
+                                    <th>+ポイント</th>
+                                    <th>-ポイント</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>通常</th>
+                                    <td>+ 5 pt</td>
+                                    <td>- 5 pt</td>
+                                </tr>
+                                <tr>
+                                    <th>戦意高揚</th>
+                                    <td>+ 10 pt</td>
+                                    <td>- 5 pt</td>
+                                </tr>
+                                <tr>
+                                    <th>戦意高揚[強]</th>
+                                    <td>+ 20 pt</td>
+                                    <td>- 5 pt</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="card-footer">
+                    </div>
+                </div>
+                <div class="card border-warning">
+                    <div class="card-header">
+                        <h4>シルロのメモ</h4>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">だいたいどれくらいか覚ておこ</h5>
+                        <table class="table table-sm table-warning">
+                            <thead>
+                                <tr>
+                                    <th>ランク</th>
+                                    <th>3s</th>
+                                    <th>1m</th>
+                                    <th>2m</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>B</th>
+                                    <td>2 pt</td>
+                                    <td>40 pt</td>
+                                    <td>80 pt</td>
+                                </tr>
+                                <tr>
+                                    <th>A</th>
+                                    <td>3 pt</td>
+                                    <td>60 pt</td>
+                                    <td>120 pt</td>
+                                </tr>
+                                <tr>
+                                    <th>S</th>
+                                    <td>4 pt</td>
+                                    <td>80 pt</td>
+                                    <td>160 pt</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="card-footer">
+                    </div>
+                </div>
+                <div class="card border-primary">
+                    <div class="card-header">
+                        <h4>砕氷戦のメモ</h4>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">氷パターン多すぎて無理</h5>
+                        <table class="table table-sm table-primary">
+                            <thead>
+                                <tr>
+                                    <th>アイスドトームリス</th>
+                                    <th>ポイント</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>B</th>
+                                    <td>70 pt</td>
+                                </tr>
+                                <tr>
+                                    <th>A</th>
+                                    <td>300 pt</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="table table-sm table-primary">
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th>/3s</th>
+                                        <th>/5m</th>
+                                        <th>/20m</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>拠点トームリス</th>
+                                        <td>2 pt</td>
+                                        <td>100 pt</td>
+                                        <td>400 pt</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                    </div>
+                    <div class="card-footer">
+                    </div>
+                </div>
             </div>
+        </div>
         </div>
     </main>
     <footer>
