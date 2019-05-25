@@ -44,36 +44,48 @@
                 </div>
                 <div class="card border-danger">
                     <div class="card-header">
-                        <h4>キル ポイント</h4>
+                        <h4>共通のメモ</h4>
                     </div>
                     <div class="card-body">
                         <h5 class="card-title">倒すとたくさん、負けても一律</h5>
-                        <table class="table table-sm table-danger">
-                            <thead>
-                                <tr>
-                                    <th>状態</th>
-                                    <th>+ポイント</th>
-                                    <th>-ポイント</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th>通常</th>
-                                    <td>+ 5 pt</td>
-                                    <td>- 5 pt</td>
-                                </tr>
-                                <tr>
-                                    <th>戦意高揚</th>
-                                    <td>+ 10 pt</td>
-                                    <td>- 5 pt</td>
-                                </tr>
-                                <tr>
-                                    <th>戦意高揚[強]</th>
-                                    <td>+ 20 pt</td>
-                                    <td>- 5 pt</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        <div class="table-responsive mx-auto">
+                            <table class="table table-sm table-danger">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">項目</th>
+                                        <th scope="col">通常</th>
+                                        <th scope="col">戦意<br>高揚</th>
+                                        <th scope="col">戦意<br>高揚[強]</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">+</th>
+                                        <td>+ 5pt</td>
+                                        <td>+ 10pt</td>
+                                        <td>+ 20pt</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">-</th>
+                                        <td>- 5pt</td>
+                                        <td>- 5pt</td>
+                                        <td>- 5pt</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">与ダメ</th>
+                                        <td>-</td>
+                                        <td>+ 20%</td>
+                                        <td>+ 40%</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">ARバー</th>
+                                        <td>-</td>
+                                        <td>x 1.25</td>
+                                        <td>x 1.5</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                     <div class="card-footer">
                     </div>
@@ -84,36 +96,50 @@
                     </div>
                     <div class="card-body">
                         <h5 class="card-title">だいたいどれくらいか覚ておこ</h5>
-                        <table class="table table-sm table-warning">
-                            <thead>
-                                <tr>
-                                    <th>ランク</th>
-                                    <th>3s</th>
-                                    <th>1m</th>
-                                    <th>2m</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th>B</th>
-                                    <td>2 pt</td>
-                                    <td>40 pt</td>
-                                    <td>80 pt</td>
-                                </tr>
-                                <tr>
-                                    <th>A</th>
-                                    <td>3 pt</td>
-                                    <td>60 pt</td>
-                                    <td>120 pt</td>
-                                </tr>
-                                <tr>
-                                    <th>S</th>
-                                    <td>4 pt</td>
-                                    <td>80 pt</td>
-                                    <td>160 pt</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        <div class="table-responsive mx-auto">
+                            <table class="table table-sm table-warning table-striped">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">時間</th>
+                                        <th scope="col">B</th>
+                                        <th scope="col">A</th>
+                                        <th scope="col">S</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">3s</th>
+                                        <td>2 pt</td>
+                                        <td>3 pt</td>
+                                        <td>4 pt</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">30s</th>
+                                        <td>20 pt</td>
+                                        <td>30 pt</td>
+                                        <td>40 pt</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">60s</th>
+                                        <td>40 pt</td>
+                                        <td>60 pt</td>
+                                        <td>80 pt</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">90s</th>
+                                        <td>60 pt</td>
+                                        <td>90 pt</td>
+                                        <td>120 pt</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">120s[終]</th>
+                                        <td>80 pt</td>
+                                        <td>120 pt</td>
+                                        <td>160 pt</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                     <div class="card-footer">
                     </div>
@@ -124,42 +150,346 @@
                     </div>
                     <div class="card-body">
                         <h5 class="card-title">氷パターン多すぎて無理</h5>
-                        <table class="table table-sm table-primary">
-                            <thead>
-                                <tr>
-                                    <th>アイスドトームリス</th>
-                                    <th>ポイント</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th>B</th>
-                                    <td>70 pt</td>
-                                </tr>
-                                <tr>
-                                    <th>A</th>
-                                    <td>300 pt</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <table class="table table-sm table-primary">
+                        <div class="table-responsive mx-auto">
+                            <table class="table table-sm table-primary">
                                 <thead>
                                     <tr>
-                                        <th></th>
-                                        <th>/3s</th>
-                                        <th>/5m</th>
-                                        <th>/20m</th>
+                                        <th scope="col"></th>
+                                        <th scope="col">拠 [B]</th>
+                                        <th scope="col">小</th>
+                                        <th scope="col">大</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <th>拠点トームリス</th>
-                                        <td>2 pt</td>
-                                        <td>100 pt</td>
-                                        <td>400 pt</td>
+                                        <th scope="row">ポイント</th>
+                                        <td>2pt / 3s<br>100pt / 5m<br>400pt / 20m</td>
+                                        <td>70 pt</td>
+                                        <td>300 pt</td>
                                     </tr>
                                 </tbody>
                             </table>
+                        </div>
+                        <div class="table-responsive mx-auto">
+                            <table class="table table-sm table-primary table-striped my-table-sm">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">時間</th>
+                                        <th scope="col">1</th>
+                                        <th scope="col">2</th>
+                                        <th scope="col">3</th>
+                                        <th scope="col">4</th>
+                                        <th scope="col">5</th>
+                                        <th scope="col">6</th>
+                                        <th scope="col">A</th>
+                                        <th scope="col">B</th>
+                                        <th scope="col">C</th>
+                                        <th scope="col">D</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">19:45</th>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>6</td>
+                                        <td>6</td>
+                                        <td>18</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">19:00</th>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">18:00</th>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><small>17:20</small></th>
+                                        <td>1</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">17:00</th>
+                                        <td>-</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><small>16:40</small></th>
+                                        <td>1</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">16:00</th>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>4</td>
+                                        <td>1</td>
+                                        <td>4</td>
+                                        <td>-</td>
+                                        <td>1</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><small>15:20</small></th>
+                                        <td>1</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">15:00</th>
+                                        <td>-</td>
+                                        <td>1</td>
+                                        <td>-</td>
+                                        <td>1</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><small>14:40</small></th>
+                                        <td>1</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">14:00</th>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>-</td>
+                                        <td>1</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><small>13:20</small></th>
+                                        <td>1</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">13:00</th>
+                                        <td>-</td>
+                                        <td>1</td>
+                                        <td>-</td>
+                                        <td>1</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><small>12:40</small></th>
+                                        <td>1</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">12:00</th>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>4</td>
+                                        <td>1</td>
+                                        <td>4</td>
+                                        <td>-</td>
+                                        <td>1</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><small>11:20</small></th>
+                                        <td>1</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">11:00</th>
+                                        <td>-</td>
+                                        <td>1</td>
+                                        <td>-</td>
+                                        <td>1</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><small>10:40</small></th>
+                                        <td>1</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">10:00</th>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>-</td>
+                                        <td>1</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>1</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><small>09:20</small></th>
+                                        <td>1</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">09:00</th>
+                                        <td>-</td>
+                                        <td>1</td>
+                                        <td>-</td>
+                                        <td>1</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><small>08:40</small></th>
+                                        <td>1</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">08:00</th>
+                                        <td>1</td>
+                                        <td>6</td>
+                                        <td>6</td>
+                                        <td>1</td>
+                                        <td>4</td>
+                                        <td>-</td>
+                                        <td>1</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>1</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                     <div class="card-footer">
                     </div>
