@@ -26,3 +26,5 @@ function setGatheringTimeTable(fileName, checkboxChcecked){
 
 setGatheringTimeTable('miner3', true);
 setGatheringTimeTable('gathering3', true);
+setGatheringTimeTable('miner2', false);
+setGatheringTimeTable('botanist2', false);
