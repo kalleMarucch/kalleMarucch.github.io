@@ -25,3 +25,4 @@ function setGatheringTimeTable(fileName, checkboxChcecked){
 };
 
 setGatheringTimeTable('miner3', true);
+setGatheringTimeTable('gathering3', true);
