@@ -5,7 +5,7 @@ function setGatheringTimeTable(fileName){
         for(i = 0; i < json.length; i++){
             rows += '<tr>';
             rows += '<td>';
-            rows += '<input type="' + json[i][0] + '">';
+            rows += '<input type="checkbox" ' + json[i][0] + '>';
             rows += '</td>';
             for (j = 1; j < json[i].length; j++) {
                 rows += '<td>';
