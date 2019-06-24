@@ -1,17 +1,13 @@
-function setGatheringTimeTable(fileName, checkboxChcecked){
+function setGatheringTimeTable(fileName){
     $.getJSON("data/" + fileName + ".json", function (json) {
 
         var rows = "";
         for(i = 0; i < json.length; i++){
             rows += '<tr>';
             rows += '<td>';
-            if(checkboxChcecked){
-                rows += '<input type="checkbox" checked>';
-            }else{
-                rows += '<input type="checkbox">';
-            }
+            rows += '<input type="' + json[i][0] + '">';
             rows += '</td>';
-            for (j = 0; j < json[i].length; j++) {
+            for (j = 1; j < json[i].length; j++) {
                 rows += '<td>';
                 rows += json[i][j];
                 rows += '</td>';
@@ -24,7 +20,7 @@ function setGatheringTimeTable(fileName, checkboxChcecked){
     });
 };
 
-setGatheringTimeTable('miner3', true);
-setGatheringTimeTable('gathering3', true);
-setGatheringTimeTable('miner2', false);
-setGatheringTimeTable('botanist2', false);
+setGatheringTimeTable('miner3');
+setGatheringTimeTable('gathering3');
+setGatheringTimeTable('miner2');
+setGatheringTimeTable('botanist2');
