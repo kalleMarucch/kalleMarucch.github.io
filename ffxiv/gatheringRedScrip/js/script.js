@@ -20,7 +20,11 @@ function setGatheringTimeTable(fileName){
     });
 };
 
+setGatheringTimeTable('miner5');
+setGatheringTimeTable('botanist5');
+setGatheringTimeTable('gathering5');
+setGatheringTimeTable('miner4');
+setGatheringTimeTable('botanist4');
+setGatheringTimeTable('gathering4');
 setGatheringTimeTable('miner3');
-setGatheringTimeTable('gathering3');
-setGatheringTimeTable('miner2');
-setGatheringTimeTable('botanist2');
+setGatheringTimeTable('botanist3');
