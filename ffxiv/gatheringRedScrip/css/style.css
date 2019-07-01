@@ -1,4 +1,6 @@
-
+div.card-none {
+    display: none;
+}
 
 .card-body {
     padding: 10px !important;

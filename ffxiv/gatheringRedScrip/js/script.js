@@ -7,12 +7,19 @@ function setGatheringTimeTable(fileName){
             rows += '<td>';
             rows += '<input type="checkbox" ' + json[i][0] + '>';
             rows += '</td>';
-            for (j = 1; j < json[i].length; j++) {
+            for (j = 1; j < 3; j++) {
                 rows += '<td>';
                 rows += json[i][j];
                 rows += '</td>';
             }
+            rows += '<td>';
+            rows += json[i][4];
+            if(json[i][5] != undefined){
+                rows += '<br>';
+                rows += json[i][5];
+            }
             rows += '</td>';
+            rows += '</tr>';
         }
 
         $('#' + fileName + ' tbody').append(rows);
