@@ -27,11 +27,13 @@ function setGatheringTimeTable(fileName){
     });
 };
 
-setGatheringTimeTable('miner5');
-setGatheringTimeTable('botanist5');
-setGatheringTimeTable('gathering5');
-setGatheringTimeTable('miner4');
-setGatheringTimeTable('botanist4');
-setGatheringTimeTable('gathering4');
-setGatheringTimeTable('miner3');
-setGatheringTimeTable('botanist3');
+//setGatheringTimeTable('miner5');
+//setGatheringTimeTable('botanist5');
+setGatheringTimeTable('gathering5_1');
+setGatheringTimeTable('gathering5_2');
+setGatheringTimeTable('gathering5_3');
+//setGatheringTimeTable('miner4');
+//setGatheringTimeTable('botanist4');
+//setGatheringTimeTable('gathering4');
+//setGatheringTimeTable('miner3');
+//setGatheringTimeTable('botanist3');
