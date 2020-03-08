@@ -34,4 +34,4 @@ function setTimeTable(){
     $('#day1 tbody').append(rows);
 }
 
-$this.setTimeTable();
+setTimeTable();
